@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Base de données locale
+dump/
+*.mongodb
+
+# Dossiers système
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.vscode/
+.idea/
+*.swp
+
+# Test coverage
+coverage/
+
+# Build
+dist/
+build/
