@@ -11,11 +11,12 @@ const contractRoutes = require("./routes/contractRoutes");
 const demandRoutes = require("./routes/demandRoutes");
 const attendanceRoutes = require("./routes/attendanceRoutes");
 const authRoutes = require("./routes/authRoutes");
+const session = require("express-session");
 
 server.use(express.json());
 server.use(cors());
 
-app.use(
+server.use(
   session({
     secret: process.env.SESSION_SECRET,
     resave: false,
