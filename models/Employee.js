@@ -1,3 +1,6 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
 const employeeSchema = new Schema({
   firstName: {
     type: String,
@@ -32,6 +35,7 @@ const employeeSchema = new Schema({
   department: {
     type: String,
     required: true,
+    ref: "Department",
   },
   hireDate: {
     type: Date,
